@@ -1,0 +1,32 @@
+{% extends "home.html" %} {% block content %} {% load static %}
+<section class="content">
+  <section class="twitter_form">
+      <form action="/" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Name" required/>
+        <input type="file" name="image"/>
+        <textarea name="body" placeholder="Say something" required></textarea>
+        <input type="submit" value="tweets"/>
+    </form>
+  </section>
+  <section class="twitters">
+    <ul>
+       {% for twitter in twitters %}
+      <li>
+        <div class="logo">
+          <img src="{% static 'img/user.png' %}"/>
+        </div>
+        <div class="name_body">
+           <div class="name">{{ twitter.name }}</div>
+           <div class="datetime">{{ twitter.created_at }}</div>
+           <p>{{ twitter.body }}</p>
+           <img src="{{ twitter.image.url }}" style="width: 200px;">
+           <a href="/delete/{{ twitter.id }}">delete</a>
+           <a href="/update/{{ twitter.id}}">update</a>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</section>
+{% endblock %}
