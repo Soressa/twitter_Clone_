@@ -11,4 +11,4 @@ class TwitterForm(forms.ModelForm):
 class UpdateForm(forms.ModelForm):
     class Meta:
         model = twitter
-        fields = '__all__'
+        fields = ['body', 'image']

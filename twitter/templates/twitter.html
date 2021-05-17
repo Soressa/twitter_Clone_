@@ -6,7 +6,8 @@
         <input type="text" name="name" placeholder="Name" required/>
         <input type="file" name="image"/>
         <textarea name="body" placeholder="Say something" required></textarea>
-        <input type="submit" value="tweets"/>
+        <input type="submit" value="Tweets"/>
+        
     </form>
   </section>
   <section class="twitters">
@@ -22,7 +23,7 @@
            <p>{{ twitter.body }}</p>
            <img src="{{ twitter.image.url }}" style="width: 200px;">
            <a href="/delete/{{ twitter.id }}">delete</a>
-           <a href="/update/{{ twitter.id}}">update</a>
+           <a href="/update/{{ twitter.id }}">update</a>
         </div>
       </li>
       {% endfor %}
