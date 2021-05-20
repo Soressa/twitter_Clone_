@@ -1,3 +1,4 @@
+{% load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +10,7 @@
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
 </head>
 <body>
+    <img src={% static "twitterclone/lionpicture.jpg" %} />
 {% block content %} {{ content}} {% endblock %}
 </body>
 
