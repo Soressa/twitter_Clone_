@@ -22,8 +22,7 @@
            <div class="datetime">{{ twitter.created_at }}</div>
            <p>{{ twitter.body }}</p>
            <img src="{{ twitter.image.url }}" style="width: 200px;">
-           <a href="/delete/{{ twitter.id }}">delete</a>
-          <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+          <a href="/delete/{{ twitter.id }}">delete</a>
            <a href="/update/{{ twitter.id }}">update</a>
         </div>
       </li>
