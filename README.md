@@ -2,7 +2,7 @@
 
 This portfolio is small project made by using html / css / django and cloudinary.I will be using this to show case my project!
 
-[live HEROKU Deployement]...
+[live HEROKU Deployement](https://agile-cove-87003.herokuapp.com/)
 
 -![image]....
 
