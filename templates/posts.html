@@ -33,7 +33,7 @@
   </section>  
   <div class="divider"></div>
   <section class="posts">
-      <ul>
+    <ul>
           
       {% for post in posts %}
       <li>
@@ -57,17 +57,22 @@
       {% if post.image %}
        <img class="post-border" src="{{ post.image.url }}">
       {% endif %}
+      <div class="icon_list">
+         <form id="likes-form" action="{% url 'like_post' post.pk %}" method='POST'>
+          {% csrf_token %}
+          <button class="like-button" type="submit", name="post_id", value="{{ post.id }}">&#10084;</button>
+          {{post.likes}}
+         </form>
       </div>
-      
 
-       </li>
-     
-       </ul>
-      
+      </li>
        {% endfor %}
+    </ul>
+      
+       
        
   </section> 
-
+  
   
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="{% static 'js/posts.js' %}">

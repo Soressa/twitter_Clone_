@@ -53,3 +53,9 @@ def edit(request, post_id):
     return render(request, 'edit.html', {'post': post, 'form': form})
 
 
+def LikeView(request, post_id):
+    post = Post.objects.get(id=post_id)
+    new_value = post.likes + 1
+    post.likes = new_value
+    post.save()
+    return HttpResponseRedirect('/')
