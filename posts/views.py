@@ -53,4 +53,3 @@ def edit(request, post_id):
     return render(request, 'edit.html', {'post': post, 'form': form})
 
 
-# function for the like button for our posts
