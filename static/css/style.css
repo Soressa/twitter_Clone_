@@ -1,95 +1,81 @@
-html ,body{
-    height:100%;
-
+html,
+body {
+  height: 100%;
 }
 
-.posts li{
-    display: flex;
-    border-bottom: 1px solid #ccc;
-    position: relative;
-
+.posts li {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  position: relative;
 }
-.posts li .logo  {
-    flex-basis: 15%;
-
-
+.posts li .logo {
+  flex-basis: 15%;
 }
-.posts .logo img{
-    width:40%;
-
-
-
+.posts .logo img {
+  width: 40%;
 }
-.posts li .name_body{
-    flex-basis: 85%;
-
+.posts li .name_body {
+  flex-basis: 85%;
 }
 .posts li .name_body .name {
-font-weight:bold;
+  font-weight: bold;
 }
 
-.posts li .name_body .datetime{ 
-    color:black;
-
+.posts li .name_body .datetime {
+  color: black;
 }
 /*
 posts
 */
-.post ul{
-    padding: 0;
-    padding: 17px;
+.post ul {
+  padding: 0;
+  padding: 17px;
 }
-@media screen and (max-width:500px) {
-    .posts li .name_body .name{
-        font-size:40px;
-    }
-
-} 
+@media screen and (max-width: 500px) {
+  .posts li .name_body .name {
+    font-size: 40px;
+  }
+}
 /*
 form
 */
-.post_form{
-    padding: 20px 40px;
-    border-bottom:1px solid #ccc;
-
+.post_form {
+  padding: 20px 40px;
+  border-bottom: 1px solid #ccc;
 }
 
-.posts li .menu_icon{
-    width:20px;
-    position:absolute;
-    right:30px;
-    top:10px;
-
-
+.posts li .menu_icon {
+  width: 20px;
+  position: absolute;
+  right: 30px;
+  top: 10px;
 }
-.posts li .menu{
-    display:none;
-    position: absolute;
-    top:40px;
-    right:15px;
-    border: 1px solid #ccc;
-    background-color: white;
-    padding:10px 20px;
-    font-size:12px;
-    border-radius: 3px;
+.posts li .menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 10px 20px;
+  font-size: 12px;
+  border-radius: 3px;
 }
-.post li{
-    position: relative;
-    display: flex;
-    border-bottom: 1px solid #ccc;
-    padding:20px 48px;
-    list-style: none;
+.post li {
+  position: relative;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 48px;
+  list-style: none;
 }
-.posts li .menu a{
-    text-decoration: none;
+.posts li .menu a {
+  text-decoration: none;
 }
-
-
 
 /* override
 */
 
-body{
+body {
   margin: 0;
   padding: 0;
 }
@@ -100,7 +86,7 @@ body {
 }
 
 body {
-  background-color:white;
+  background-color: white;
   color: rgb(18, 144, 202);
   font-family: Helvetica, sans-serif;
 }
@@ -126,7 +112,6 @@ Post
   margin: 0 auto;
   border-left: 1px solid rgba(11, 152, 247, 0.932);
   border-right: 1px solid rgba(8, 192, 238, 0.959);
-
 }
 
 h1 {
@@ -140,11 +125,6 @@ h1 {
   border-top: 1px solid rgba(204, 204, 204, 0.5);
 }
 
-
-
-
-
-
 .post_form textarea {
   width: 89%;
   height: 80px;
@@ -152,27 +132,23 @@ h1 {
   border: 1px solid #ccc;
   outline: none;
   border: 1%;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #ccc;
 }
 
 textarea {
   font-size: 15px;
   background-color: #fff;
-  color:black;
+  color: black;
   font-family: Helvetica, sans-serif;
   resize: none;
 }
-@media screen and (max-width:1200px)
-    {
-    
+@media screen and (max-width: 1200px) {
 }
-.but{
-    margin-left:450px ;
+.but {
+  margin-left: 450px;
 }
 
-@media screen and(min-width:450px)
-    {
-    
+@media screen and(min-width:450px) {
 }
 
 .posts ul {
@@ -214,11 +190,9 @@ textarea {
   color: #fff;
 }
 
-
-
 .content .post_form .logo1 img {
-    width:15%;
-    padding-top: 20px;
+  width: 15%;
+  padding-top: 20px;
 }
 
 .posts li .name_body {
@@ -228,8 +202,6 @@ textarea {
 .posts li .name_body .name {
   font-weight: bold;
 }
-
-
 
 .post-border {
   border-radius: 10px;
@@ -273,8 +245,8 @@ textarea {
 }
 
 .update-button {
-  border-radius: 20px;
-  background-color: rgb(87, 231, 20) !important;
+  border-radius: 5px;
+  background-color: #209bf0 !important;
   width: 80px;
   height: 35px;
   color: rgb(227, 240, 224);
@@ -285,8 +257,8 @@ textarea {
 }
 
 .cancel-button {
-  border-radius: 20px;
-  background-color: rgb(231, 20, 20) !important;
+  border-radius: 5px;
+  background-color: #209bf0 !important;
   width: 80px;
   height: 35px;
   color: rgb(227, 240, 224);
@@ -308,12 +280,12 @@ textarea {
 }
 
 .like-button {
-    font-size: 25px;
+  font-size: 25px;
   border: none;
   border-radius: 5px;
   width: 34px;
-  height:32;
-  color:red;
+  height: 32;
+  color: red;
 }
 
 #likes-form {
@@ -342,34 +314,28 @@ textarea {
   border-bottom: 1px solid rgba(204, 204, 204, 0.5);
 }
 
-@media screen and (min-width:400px) {
-  
-  
-}
-    
-
-h1{
-    padding-left: 10px;
-    padding-top: 5px;
-    font-size: 20px;
-    top: 0px;
-
+@media screen and (min-width: 400px) {
 }
 
-@media screen and (min-width: 400px){
-.posts li .name_body .name {
+h1 {
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: 20px;
+  top: 0px;
+}
+
+@media screen and (min-width: 400px) {
+  .posts li .name_body .name {
     font-size: 23px;
-}
-.upload-file{
+  }
+  .upload-file {
     color: #209bf0;
     margin-top: 8px;
     width: 50%;
-    min-height: calc(1.5em + .5rem + 2px);
-    font-size: .875rem;
-    border-radius: .2rem;
-}
-
-
+    min-height: calc(1.5em + 0.5rem + 2px);
+    font-size: 0.875rem;
+    border-radius: 0.2rem;
+  }
 }
 .flex {
   display: flex;
@@ -379,16 +345,15 @@ h1{
 
 .main-header {
   position: relative;
-    display: flex;
-    max-width: 600px;
-    height: 7%;
-    border-bottom: rgba(204, 204, 204, 0.5);
-    margin: auto;
-    border-left: 0px solid rgba(11, 152, 247, 0.932);
-    border-right: 0px solid rgba(8, 192, 238, 0.959);
-    margin-bottom: 10px;
+  display: flex;
+  max-width: 600px;
+  height: 7%;
+  border-bottom: rgba(204, 204, 204, 0.5);
+  margin: auto;
+  border-left: 0px solid rgba(11, 152, 247, 0.932);
+  border-right: 0px solid rgba(8, 192, 238, 0.959);
+  margin-bottom: 10px;
 }
-.b1{
-  margin-bottom:30px;
+.b1 {
+  margin-bottom: 30px;
 }
-
